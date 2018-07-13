@@ -12,12 +12,13 @@
 
 <body>
     <div class="container" style="margin-top: 30px">
+        <h2>Partie 1: Interprétation de pseudo-code</h2>
         <div class="alert alert-primary">
             Dans ces exercices, comme en javascript, l'opérateur '+' correspond à l'addition ET la concaténation.
             <br>Le signe ← signifie "prend la valeur".
         </div>
         <div class="row mb-5">
-            <h2>Exercice 1</h2>
+            <h3>Exercice 1</h3>
             <div class="col-12">
                 <p>
                     <strong>Variables :</strong> A, B, C
@@ -64,7 +65,7 @@
         </div>
         <hr>
         <div class="row mb-5">
-            <h2>Exercice 2</h2>
+            <h3>Exercice 2</h3>
             <div class="col-12">
                 <p>
                     <strong>Variables :</strong> A, B, C
@@ -108,7 +109,7 @@
         </div>
         <hr>
         <div class="row mb-5">
-            <h2>Exercice 3</h2>
+            <h3>Exercice 3</h3>
             <div class="col-12">
                 <p>
                     <strong>Variables :</strong> A, B, C
@@ -148,7 +149,7 @@
             </div>
         </div>
         <div class="row mb-5">
-            <h2>Exercice 4</h2>
+            <h3>Exercice 4</h3>
             <div class="col-12">
                 <div class="alert alert-danger" role="alert">
                     La boucle va de 1 à A
@@ -190,7 +191,7 @@
             </div>
         </div>
         <div class="row mb-5">
-            <h2>Exercice 5</h2>
+            <h3>Exercice 5</h3>
             <div class="col-12">
                 <p>
                     <strong>Variables :</strong> A, B, C
@@ -231,11 +232,14 @@
             </div>
         </div>
         <div class="row mb-5">
-            <h2>Exercice 6</h2>
+            <h3>Exercice 6</h3>
             <div class="col-12">
                 <p>
-                    <strong>Variables :</strong> A <strong>(chaîne de caractères)</strong>
-                    B, C <strong>(entiers)</strong> D <strong>(tableau de caractères)</strong>
+                    <strong>Variables :</strong> A
+                    <strong>(chaîne de caractères)</strong>
+                    B, C
+                    <strong>(entiers)</strong> D
+                    <strong>(tableau de caractères)</strong>
                 </p>
                 <p>
                     <strong>Début</strong>
@@ -245,10 +249,12 @@
                     <br>B ← 5
                     <br>C ← 0
                     <br>D ← ['a', 'b', 'c', 'd', 'e', 'f']
-                    <br><strong>Tant que </strong>B >= 0
+                    <br>
+                    <strong>Tant que </strong>B >= 0
                     <span class="indented">
                         Ajouter à A le caractère de D qui à pour indice B
-                        <br><strong>Si</strong> C est paire
+                        <br>
+                        <strong>Si</strong> C est paire
                         <span class="indented">
                             <strong>Décrémenter</strong> B de 1
                         </span>
@@ -272,8 +278,125 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <h2>Partie 2: Reverse</h2>
+        <div class="alert alert-primary">
+            Pour ces exercices vous devez écrire une fonction en vous basant sur des paires d'entrées / sorties (Input / Output).
+        </div>
+        <h3>Fonction 1</h3>
+        <div class="row">
+            <div class="col-6 text-right">
+                <strong>Entrées</strong>
+            </div>
+            <div class="col-6">
+                <strong>Sorties</strong>
+            </div>
+        </div>
+        <div class="row border mb-5 p-3">
+            <div class="col-6 text-right">
+                ['a', 'ab', 'abc']
+            </div>
+            <div class="col-6">
+                123
+            </div>
+            <div class="col-6 text-right">
+                ['ab', 'ab', 'c']
+            </div>
+            <div class="col-6">
+                221
+            </div>
+            <div class="col-6 text-right">
+                ['12345', '', '456']
+            </div>
+            <div class="col-6">
+                503
+            </div>
+        </div>
+        <h3>Fonction 2</h3>
+        <div class="row">
+            <div class="col-6 text-right">
+                <strong>Entrées</strong>
+            </div>
+            <div class="col-6">
+                <strong>Sorties</strong>
+            </div>
+        </div>
+        <div class="row border mb-5 p-3">
+            <div class="col-6 text-right">
+                ['Ice', 'Fire', 'Snow']
+            </div>
+            <div class="col-6">
+                [ 'Icepocalypse', 'Firepocalypse', 'Snowpocalypse' ]
+            </div>
+            <div class="col-6 text-right">
+                ['A', 'E-']
+            </div>
+            <div class="col-6">
+                ['Apocalypse', 'E-pocalypse']
+            </div>
+        </div>
+        <h3>Fonction 3</h3>
+        <div class="row">
+            <div class="col-6 text-right">
+                <strong>Entrées</strong>
+            </div>
+            <div class="col-6">
+                <strong>Sorties</strong>
+            </div>
+        </div>
+        <div class="row border mb-5 p-3">
+            <div class="col-6 text-right">
+                'TestingSample'
+            </div>
+            <div class="col-6">
+                Testing sample
+            </div>
+            <div class="col-6 text-right">
+                'CodiNCamp'
+            </div>
+            <div class="col-6">
+                Codi n camp
+            </div>
+            <div class="col-6 text-right">
+                'ABCDEF'
+            </div>
+            <div class="col-6">
+                A b c d e f
+            </div>
+        </div>
+        <h3>Fonction 4</h3>
+        <div class="row">
+            <div class="col-6 text-right">
+                <strong>Entrées</strong>
+            </div>
+            <div class="col-6">
+                <strong>Sorties</strong>
+            </div>
+        </div>
+        <div class="row border mb-5 p-3">
+            <div class="col-6 text-right mb-3">
+                5
+            </div>
+            <div class="col-6">
+                [0, 1, 1, 2, 3]
+            </div>
+            <div class="col-6 text-right mb-3">
+                10
+            </div>
+            <div class="col-6">
+                [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+            </div>
+            <div class="col-6 text-right">
+                    50
+                </div>
+                <div class="col-6">
+                    [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229, 832040, 1346269, 2178309, 3524578, 5702887, 9227465, 14930352, 24157817, 39088169, 63245986, 102334155, 165580141, 267914296, 433494437, 701408733, 1134903170, 1836311903, 2971215073, 4807526976, 7778742049]
+                </div>
+        </div>
+    </div>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 
 </html>
