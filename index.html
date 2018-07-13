@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Renforcement #4</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" style="margin-top: 30px">
+        <div class="alert alert-primary">
+            Dans ces exercices, comme en javascript, l'opérateur '+' correspond à l'addition ET la concaténation.
+            <br>Le signe ← signifie "prend la valeur".
+        </div>
+        <div class="row mb-5">
+            <h2>Exercice 1</h2>
+            <div class="col-12">
+                <p>
+                    <strong>Variables :</strong> A, B, C
+                    <strong>(entiers)</strong>
+                </p>
+                <p>
+                    <strong>Début</strong>
+                </p>
+                <p class="indented">
+                    A ← 3
+                    <br> B ← 2
+                    <br> C ← A + B
+                    <br> A ← B + C
+                    <br> B ← A - C
+                    <br>
+                </p>
+                <p>
+                    <strong>Fin</strong>
+                </p>
+            </div>
+            <div class="col-12">
+                <div class="form-inline">
+                    <div class="input-group mr-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">A</div>
+                        </div>
+                        <input type="text" class="form-control" id="ex1-a">
+                    </div>
+                    <div class="input-group mr-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">B</div>
+                        </div>
+                        <input type="text" class="form-control" id="ex1-b">
+                    </div>
+                    <div class="input-group mr-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">C</div>
+                        </div>
+                        <input type="text" class="form-control" id="ex1-c">
+                    </div>
+                    <button class="btn btn-primary" id="ex1-sub">Valider</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row mb-5">
+            <h2>Exercice 2</h2>
+            <div class="col-12">
+                <p>
+                    <strong>Variables :</strong> A, B, C
+                    <strong>(entiers)</strong>
+                </p>
+                <p>
+                    <strong>Début</strong>
+                </p>
+                <p class="indented">
+                    A ← 18
+                    <br> B ← 22
+                    <br> C ← A
+                    <br> A ← B
+                    <br> B ← C
+                    <br>
+                </p>
+                <p>
+                    <strong>Fin</strong>
+                </p>
+            </div>
+            <div class="col-12">
+                <div class="form-inline">
+                    <div class="input-group mr-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">A</div>
+                        </div>
+                        <input type="text" class="form-control" id="ex2-a">
+                    </div>
+                    <div class="input-group mr-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">B</div>
+                        </div>
+                        <input type="text" class="form-control" id="ex2-b">
+                    </div>
+                    <button class="btn btn-primary" id="ex2-sub">Valider</button>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-warning">
+            Que peut-on constater ?
+        </div>
+        <hr>
+        <div class="row mb-5">
+            <h2>Exercice 3</h2>
+            <div class="col-12">
+                <p>
+                    <strong>Variables :</strong> A, B, C
+                    <strong>(entiers)</strong>
+                </p>
+                <p>
+                    <strong>Début</strong>
+                </p>
+                <p class="indented">
+                    A ← 5
+                    <br> B ← 2
+                    <br>
+                    <strong>Si</strong> A > B
+                    <strong>et</strong> B
+                    < 2 <span class="indented">
+                        C ← A - B
+                        </span>
+                        <strong>Sinon</strong>
+                        <span class="indented">
+                            C ← B - A
+                        </span>
+                </p>
+                <p>
+                    <strong>Fin</strong>
+                </p>
+            </div>
+            <div class="col-12">
+                <div class="form-inline">
+                    <div class="input-group mr-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">C</div>
+                        </div>
+                        <input type="text" class="form-control" id="ex3-c">
+                    </div>
+                    <button class="btn btn-primary" id="ex3-sub">Valider</button>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <h2>Exercice 4</h2>
+            <div class="col-12">
+                <div class="alert alert-danger" role="alert">
+                    La boucle va de 1 à A
+                    <strong>inclus</strong>.
+                </div>
+                <p>
+                    <strong>Variables :</strong> A, B
+                    <strong>(entiers)</strong>
+                </p>
+                <p>
+                    <strong>Début</strong>
+                </p>
+                <p class="indented">
+                    A ← 3
+                    <br>B ← 2
+                    <br>
+                    <strong>Pour</strong> i
+                    <strong>de </strong> 1
+                    <strong>jusqu'à</strong> A
+                    <strong>avec un pas de</strong> 1
+                    <span class="indented">
+                        B ← B * i
+                    </span>
+                </p>
+                <p>
+                    <strong>Fin</strong>
+                </p>
+            </div>
+            <div class="col-12">
+                <div class="form-inline">
+                    <div class="input-group mr-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">B</div>
+                        </div>
+                        <input type="text" class="form-control" id="ex4-b">
+                    </div>
+                    <button class="btn btn-primary" id="ex4-sub">Valider</button>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <h2>Exercice 5</h2>
+            <div class="col-12">
+                <p>
+                    <strong>Variables :</strong> A, B, C
+                    <strong>(entiers)</strong> D, E, F
+                    <strong>(chaîne de caractères)</strong>
+                </p>
+                <p>
+                    <strong>Début</strong>
+                </p>
+                <p class="indented">
+                    A ← 6
+                    <br>B ← 4
+                    <br>C ← A + B
+                    <br>D ← "2"
+                    <br>E ← "458"
+                    <br>F ← D + E
+                </p>
+                <p>
+                    <strong>Fin</strong>
+                </p>
+            </div>
+            <div class="col-12">
+                <div class="form-inline mb-1">
+                    <div class="input-group mr-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">C</div>
+                        </div>
+                        <input type="text" class="form-control" id="ex5-c">
+                    </div>
+                    <div class="input-group mr-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">F</div>
+                        </div>
+                        <input type="text" class="form-control" id="ex5-f">
+                    </div>
+                </div>
+                <button class="btn btn-primary" id="ex5-sub">Valider</button>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <h2>Exercice 6</h2>
+            <div class="col-12">
+                <p>
+                    <strong>Variables :</strong> A <strong>(chaîne de caractères)</strong>
+                    B, C <strong>(entiers)</strong> D <strong>(tableau de caractères)</strong>
+                </p>
+                <p>
+                    <strong>Début</strong>
+                </p>
+                <p class="indented">
+                    A ← ""
+                    <br>B ← 5
+                    <br>C ← 0
+                    <br>D ← ['a', 'b', 'c', 'd', 'e', 'f']
+                    <br><strong>Tant que </strong>B >= 0
+                    <span class="indented">
+                        Ajouter à A le caractère de D qui à pour indice B
+                        <br><strong>Si</strong> C est paire
+                        <span class="indented">
+                            <strong>Décrémenter</strong> B de 1
+                        </span>
+                        <strong>Incrémenter</strong> C de 1
+                    </span>
+                </p>
+                <p>
+                    <strong>Fin</strong>
+                </p>
+            </div>
+            <div class="col-12">
+                <div class="form-inline mb-1">
+                    <div class="input-group mr-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">A</div>
+                        </div>
+                        <input type="text" class="form-control" id="ex6-a">
+                    </div>
+                </div>
+                <button class="btn btn-primary" id="ex6-sub">Valider</button>
+            </div>
+        </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

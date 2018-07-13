@@ -1,0 +1,9 @@
+.container {
+    margin-top: 30px;
+}
+
+.indented {
+    padding-left: 35px;
+    display: block;
+    border-left: 1px solid #bbbbbb;
+}
